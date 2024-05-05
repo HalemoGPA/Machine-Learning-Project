@@ -1,0 +1,10 @@
+gunicorn
+flask
+pandas
+scikit-learn==1.3.2
+category_encoders
+matplotlib
+streamlit
+seaborn
+numpy
+
