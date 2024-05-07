@@ -1,28 +1,24 @@
 import streamlit as st
 import pandas as pd
-import pickle
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.preprocessing import PowerTransformer
-from category_encoders import OneHotEncoder, OrdinalEncoder
+
+import requests
+def send_post_request(api_url, json_data):
+    response = requests.post(api_url, json=json_data)
+    if response.status_code == 200:
+        return response.json()
+    else:
+        return None
 def show_predict_pag():
     st.write("Software Developer Stroke Prediction")
-    model = pickle.load(open("model.pkl", "rb"))
-
-
-    with open('preprocessing_pipeline.pkl', 'rb') as file:
-        pre = pickle.load(file)
-
+    api_url = "https://machine-api-eq7w.onrender.com/predict"
 
 
     out = {}
-    age=st.text_input("Age")
-    if age != "":
-        try:
-            out['age'] = float(age)   
-        except:
-            raise("the age must be a number")    
+    out['age']=st.slider("Age", 0, 100, 50)
+
     out['hypertension'] = 1 if st.radio("Hypertension", ["Yes", "NO"]) == "Yes" else 0
     out['heart_disease'] = 1 if st.radio("Heart Disease", ["Yes", "NO"]) == "Yes" else 0
 
@@ -35,27 +31,30 @@ def show_predict_pag():
     out['work_type']=st.selectbox("Work Type", work_type)
     out['Residence_type']=st.radio("Residence Type", ["Urban", "Rural"])
 
-    avg_glucose_level=st.text_input("Avg Glucose Level")
-    if avg_glucose_level != "":
-        try:
-            out['avg_glucose_level'] = float(avg_glucose_level)   
-        except:
-            raise("the avg glucose level must be a number")   
 
-    bmi=st.text_input("BMI")
-    if bmi != "":
-        try:
-            out['bmi'] = float(bmi)   
-        except:
-            raise("the bmi glucose level must be a number")   
+    out['avg_glucose_level']=st.slider("Avg Glucose Level", 50, 300, 150)       
+
+    out['bmi']=st.slider("BMI", 10, 100, 25)            
     smoking_status = ["formerly smoked", "never smoked", "smokes"]          
     out['smoking_status']=st.selectbox("Smoking Status", smoking_status)
+    out['smoking_not_found'] = "True" if st.radio("Smoking Not Found", ["Yes", "NO"]) == "Yes" else "False"
     ok = st.button("Predict")
-    data = pd.DataFrame([out])
+    data={
+        "gender": out['gender'],
+        "age": out['age'],
+        "hypertension": out['hypertension'],
+        "heart_disease": out['heart_disease'],
+        "ever_married": out['ever_married'],
+        "work_type": out['work_type'],
+        "Residence_type": out['Residence_type'],
+        "avg_glucose_level": out['avg_glucose_level'],
+        "bmi": out['bmi'],
+        "smoking_status": out['smoking_status'],
+        "smoking_not_found": out['smoking_not_found']
+    }
     if ok:
-        re = pre.transform(data)
-        
-        st.write("The predict: " + ("Stroke" if model.predict(re)[0] else "Not Stroke"))
+        response = send_post_request(api_url, data)
+        st.write("The predict: " + ("Potential Stroke" if response['prediction']  else "Clear"))
 
 
 
