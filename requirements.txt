@@ -1,10 +1,9 @@
-gunicorn
-flask
 pandas
-scikit-learn==1.3.2
-category_encoders
+streamlit
 matplotlib
 streamlit
 seaborn
+scikit-learn==1.3.2
 numpy
-
+category_encoders
+requests
