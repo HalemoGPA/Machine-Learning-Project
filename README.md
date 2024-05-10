@@ -40,7 +40,7 @@ For additional information and to explore more about stroke prediction, you can 
     <img src="Screenshots/2.jpeg" alt="Screenshot 1" width="300">
     <img src="Screenshots/IMG-20240509-WA0033(1).jpg" alt="Screenshot 2" width="300">
     <img src="Screenshots/IMG_20240510_163901.jpg" alt="Screenshot 3" width="300">
-    <img src="Screenshots/IMG-20240509-WA0035.jpg" alt="Screenshot 4" width="300">
+    <img src="Screenshots/IMG_20240510_170202.jpg" alt="Screenshot 4" width="300">
     <img src="Screenshots/1.jpeg" alt="Screenshot 5" width="300">
     <img src="Screenshots/IMG-20240509-WA0032(1).jpg" alt="Screenshot 6" width="300">
 </div>
