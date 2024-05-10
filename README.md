@@ -39,7 +39,6 @@ For additional information and to explore more about stroke prediction, you can 
 ![Screenshot 1](Screenshots/2.jpeg)
 ![Screenshot 2](Screenshots/IMG-20240509-WA0033(1).jpg)
 ![Screenshot 3](Screenshots/IMG_20240510_163901.jpg)
-![Screenshot 4](Screenshots/IMG-20240509-WA0035.jpg)
 ![Screenshot 5](Screenshots/1.jpeg)
 ![Screenshot 6](Screenshots/IMG-20240509-WA0032(1).jpg)
 
