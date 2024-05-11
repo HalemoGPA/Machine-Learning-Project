@@ -2,7 +2,7 @@
 
 ## Introduction:
 
-Welcome to the Stroke Prediction Project! This project aims to develop a prediction model using machine learning techniques to determine whether an individual is at risk of stroke or not based on various factors such as gender, age, hypertension, heart disease, marital status, occupation, residence type, average glucose level, and BMI. It relies on diverse clinical data to train and evaluate the model's performance. This README file provides an overview of the project, including instructions for installation, usage, and suggested future improvements. We welcome contributions and feedback from the community to enhance the effectiveness and accuracy of this model.
+Welcome to the Stroke Prediction Project!! This project aims to develop a prediction model using machine learning techniques to determine whether an individual is at risk of stroke or not based on various factors such as gender, age, hypertension, heart disease, marital status, occupation, residence type, average glucose level, and BMI. It relies on diverse clinical data to train and evaluate the model's performance. This README file provides an overview of the project, including instructions for installation, usage, and suggested future improvements. We welcome contributions and feedback from the community to enhance the effectiveness and accuracy of this model.
 
 ## Features:
 
