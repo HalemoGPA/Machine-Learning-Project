@@ -18,7 +18,7 @@ Welcome to the Stroke Prediction Project!! This project aims to develop a predic
 
 To use the web application, follow these steps:
 
-1. Visit the web application at [https://web-with-machine-nucec8gi3bzjgxpdxmtwqj.streamlit.app/](https://web-with-machine-nucec8gi3bzjgxpdxmtwqj.streamlit.app/).
+1. Visit the web application at [Web App Using Streamlit](https://web-with-machine-nucec8gi3bzjgxpdxmtwqj.streamlit.app/) or [Web App using Reactjs](https://anasmas123.github.io/stroke_clinic/).
 2. Input the required information for prediction.
 3. Click the submit button to get the prediction result.
 
