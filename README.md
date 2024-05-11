@@ -50,8 +50,9 @@ For additional information and to explore more about stroke prediction, you can 
 We would like to extend our gratitude to the following projects and contributors for their valuable resources and inspiration:
 
 1. [Cerebral Stroke Prediction app using Flutter with Ai model API](https://github.com/Mohamed-Fathy-K/Cerebral-Stroke-Prediction-app-using-flutter-with-Ai-model-api) by Mohamed-Fathy-K
-2. [Machine-API](https://github.com/HalemoGPA/Machine-API) by HalemoGPA
-3. [API with Machine](https://github.com/saadahmed313/api-with-machine) by saadahmed313
-4. [Web with Machine](https://github.com/saadahmed313/Web-with-machine) by saadahmed313
+2. [Responsive-web-app <Stroke_clinic>](https://github.com/anasMAS123/stroke_clinic) by anasMAS123
+3. [Machine-API](https://github.com/HalemoGPA/Machine-API) by HalemoGPA
+4. [API with Machine](https://github.com/saadahmed313/api-with-machine) by saadahmed313
+5. [Web with Machine](https://github.com/saadahmed313/Web-with-machine) by saadahmed313
 
 We appreciate their contributions to the open-source community.
