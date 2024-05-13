@@ -22,7 +22,7 @@ To use the web application, follow these steps:
 2. Input the required information for prediction.
 3. Click the submit button to get the prediction result.
 
-To install the mobile application, download the APK file from [here](https://github.com/Mohamed-Fathy-K/Cerebral-Stroke-Prediction-app-using-flutter-with-Ai-model-api/releases/download/V1.0/app-arm64-v8a-release.apk) and follow the installation instructions on your device.
+To install the mobile application, download the APK file from [here](https://github.com/HalemoGPA/mobile-app-stroke-prediction/releases/download/1.0.1/app-arm64-v8a-release.apk) and follow the installation instructions on your device.
 
 ## Usage:
 
