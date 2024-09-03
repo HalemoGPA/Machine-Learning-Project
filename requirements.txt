@@ -1,7 +1,7 @@
 gunicorn
 flask
 pandas
-scikit-learn==1.3.2
+scikit-learn==1.5.0
 category_encoders
 streamlit
 matplotlib
